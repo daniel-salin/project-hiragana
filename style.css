@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(158, 28, 28);
+}
+
+h1,
+h2,
+h3,
+span,
+a,
+p {
+    font-family: helvetica, sans;
+}
+
+h2 {
+    margin: 0;
+}
+
+header > h2:before,
+header > h2:after {
+    content: "  ~  ";
+    font-size: 1em;
+    opacity: 0.3;
+}
+
+/* Set margin-top on h1 to avoid margin collapse */
+h1 {
+    padding: 10px 0 10px 20px;
+    margin:0;
+    background-color: rgb(138, 1, 1);
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+}
+
+#banner {
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(70px, 5%) 95%;
+    grid-template-rows: 1fr;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo > h1 {
+    background-color: white;
+    color: black;
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: black;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 70px:
+}
+
+#navbar > ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar > ul > li {
+    display: inline-block;
+}
+
+#navbar > ul > li > a {
+    display: block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: white;
+    transition: 750ms all;
+}
+
+#navbar > ul > li > a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#content {
+    margin:0;
+    padding: 20px 40px 40px 40px;
+    background-color: white;
+    text-align: center;
+}
+
+#content > article > header > h2 > span[data-romaji] {
+    display: inline;
+}
+
+#content > article > header > h2:hover > span[data-romaji] {
+    display: none;
+}    
+
+#content > article > header > h2 > span[data-hiragana] {
+    display: none;
+    }
+
+#content > article > header > h2:hover > span[data-hiragana] {
+    display: inline;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 20px 0 20px 0;
+    border: 1px solid black;
+}
+
+.box {
+    padding: 1em;
+    border: 1px solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.box:empty {
+    background-color: rgb(165, 165, 199);
+}
+
+.box:hover {
+    background-color: black;
+    color:white;
+}
+
+span[data-romaji] {
+    display: none;
+}
+
+.box:hover > span[data-hiragana] {
+    display: none;
+}
+
+.box:hover > span[data-romaji] {
+    display: inline;
+}
+
+#main-footer {
+    height: 60px;
+    background-color: rgb(158, 28, 28);
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+
+
+
