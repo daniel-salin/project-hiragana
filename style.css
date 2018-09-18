@@ -150,6 +150,15 @@ span[data-romaji] {
     grid-template-columns: 1fr 6fr 1fr;
 }
 
+/* ------------------ Katakana specific ------------------*/
+/*-------------------------------------------------------*/
+#content > article > header > h2 > span[data-katakana] {
+    display: none;
+    }
 
+#content > article > header > h2:hover > span[data-katakana] {
+    display: inline;
+    }
 
-
+    .box:hover > span[data-katakana] {
+        display: none;
